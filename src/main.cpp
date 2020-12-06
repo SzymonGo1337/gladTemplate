@@ -19,6 +19,9 @@ int main(int argv, char** argc) {
     std::cout << "Renderer >> " << glGetString(GL_RENDERER) << "\n";
     std::cout << "OpenGL Version >> " << glGetString(GL_VERSION) << "\n";
 
+    system("Setlocal");
+    std::cout << "[31mTEST\n";
+
     while(!glfwWindowShouldClose(window)) {
         glClearColor(5.0f / 255.0f, 255.0f / 255.0f, 247.0f / 255.0f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
